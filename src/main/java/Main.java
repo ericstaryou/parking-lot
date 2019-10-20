@@ -1,5 +1,7 @@
+import model.*;
+
 public class Main {
     public static void main(String args[]){
-        System.out.println("Hello Worldxx");
+        System.out.println("Create Parking Lot");
     }
 }
