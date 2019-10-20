@@ -2,15 +2,27 @@ package model;
 
 public class Car {
     private String registractionNo;
-    private Colour colour;
-    private enum Colour {White, Black, Grey, Silver, Red, Green, Blue, Yellow}
+    private String colour;
 
     public Car(){
 
     }
 
-    public void park(Ticket ticket){
-        ticket.issueTicket();
+    public String getRegistractionNo() {
+        return registractionNo;
     }
+
+    public void setRegistractionNo(String registractionNo) {
+        this.registractionNo = registractionNo;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
 
 }
