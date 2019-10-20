@@ -11,9 +11,9 @@ public interface Operator {
 
     void checkStatus();
 
-    void allocateCarToSlot();
+    void allocateCarToSlot(Car car);
 
-    void vacantSlot();
+    void vacantSlot(int slotNo);
 
     String searchCar(Filter filter);
 }
