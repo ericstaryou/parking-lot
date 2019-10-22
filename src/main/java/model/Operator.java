@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 public interface Operator {
     void createParkingLot(int size);
 
@@ -15,5 +17,7 @@ public interface Operator {
 
     void vacantSlot(int slotNo);
 
-    String searchCar(Filter filter);
+    void searchCarByColour(String input, String resultType);
+
+    void searchCarByRegistrationNo(String input);
 }
