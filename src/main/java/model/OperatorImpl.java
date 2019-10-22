@@ -22,7 +22,6 @@ public class OperatorImpl implements Operator {
 
     public void documentRegistrationNo(Car car, String registrationNo) {
         car.setRegistrationNo(registrationNo);
-        System.out.println();
     }
 
     public void documentCarColour(Car car, String colour) {
