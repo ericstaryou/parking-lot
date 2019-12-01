@@ -19,11 +19,13 @@ public class Main {
         Operator operator = new OperatorImpl();
         Scanner scanner = new Scanner(System.in);
 
-        //System.out.println("Welcome to ABC Parking Lot, please key in a command: ");
+//        System.out.println("Welcome to ABC Parking Lot, please key in a command: ");
+
+        run(args[0], operator);
 
         boolean terminate = false;
         while (!terminate){
-            String command = args[0];
+            String command = scanner.nextLine();
             if (run(command, operator)) {
                 terminate = true;
             }
