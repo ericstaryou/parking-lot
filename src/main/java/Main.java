@@ -15,16 +15,15 @@ public class Main {
     final static String FILE_INPUT = "file_input.txt";
 
     public static void main(String args[]) throws FileNotFoundException {
-        Arrays.stream(args).forEach(System.out::println);
 
         Operator operator = new OperatorImpl();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to ABC Parking Lot, please key in a command: ");
+        //System.out.println("Welcome to ABC Parking Lot, please key in a command: ");
 
         boolean terminate = false;
         while (!terminate){
-            String command = scanner.nextLine();
+            String command = args[0];
             if (run(command, operator)) {
                 terminate = true;
             }
