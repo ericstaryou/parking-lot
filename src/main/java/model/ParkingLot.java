@@ -42,9 +42,9 @@ public class ParkingLot {
     }
 
     public void printStatus(){
-        System.out.println("Slot No.    Registration No     Colour");
+        System.out.println("Slot No.    Registration No    Colour");
         for (Slot slot :slots) {
-            System.out.println((slot.getSlotNo()+1) + "     " + slot.getCar().getRegistrationNo() + "      " + slot.getCar().getColour());
+            System.out.println((slot.getSlotNo()+1) + "           " + slot.getCar().getRegistrationNo() + "           " + slot.getCar().getColour());
         }
     }
 
