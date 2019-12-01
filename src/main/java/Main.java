@@ -15,6 +15,8 @@ public class Main {
     final static String FILE_INPUT = "file_input.txt";
 
     public static void main(String args[]) throws FileNotFoundException {
+        Arrays.stream(args).forEach(System.out::println);
+
         Operator operator = new OperatorImpl();
         Scanner scanner = new Scanner(System.in);
 
